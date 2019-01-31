@@ -37,10 +37,11 @@ nav ul {
   display: flex;
 }
 
+/*
 nav ul a li {
-  /* padding: 40px 100px; */
+  padding: 40px 100px;
 }
-
+*/
 nav ul a {
   color: #fff;
   text-decoration: none;
