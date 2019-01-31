@@ -318,7 +318,8 @@ footer {
 .footer-left * {
   /* background-color: #888; */
   margin-bottom: 5px;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  color: #aaa;
 }
 
 .footer-left h1 {
@@ -331,6 +332,12 @@ p.text {
   margin-bottom: 20px;
 }
 
+.footer-left p a#profile-link {
+  text-decoration: none;
+
+}
+
+.fab,
 .fas {
   font-size: 15px;
   width: 10px;
@@ -339,8 +346,6 @@ p.text {
 p i {
   margin-right: 15px;
 }
-
-
 
 .footer-right a {
   margin-left: 35px;
