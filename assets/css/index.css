@@ -18,6 +18,10 @@ body {
   background-color: #ccc;
 }
 
+main {
+  margin-bottom: 330px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -48,9 +52,6 @@ nav ul a {
   padding: 40px 50px;
 }
 
-main {
-  margin-bottom: 240px;
-}
 
 #welcome-section {
   height: 100vh;
@@ -69,7 +70,7 @@ h1#bgLetter {
   font-weight: 900;
 }
 
-h2 {
+#div2 h2 {
   font-family: 'Nunito Sans', sans-serif;
   letter-spacing: -13px;
   text-align: center;
@@ -89,9 +90,11 @@ h2 span {
 }
 
 #div2 h3 {
+  width: 100%;
   color: #fff;
   font-size: 2.8em;
-  margin-top: -0.5em;
+  text-align: center;
+  margin-top: -0.3em;
   letter-spacing: 1.5px;
   text-transform: capitalize;
 }
@@ -110,7 +113,7 @@ h2 span {
   display: block;
   height: 100%;
   position: absolute;
-  top: 300px;
+  top: 475px;
   left: 0;
   margin: auto;
 }
@@ -118,7 +121,8 @@ h2 span {
 /* ======================= */
 
 #projects {
-  padding: 5em 0;
+  text-align: center;
+  padding: 7em 0;
   background-color: #e8e2db;
 }
 
@@ -267,7 +271,7 @@ h2 span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5em 0;
+  padding: 7em 0;
   /*   background-color: #fff; */
 }
 
@@ -293,16 +297,16 @@ h2 span {
 footer {
   position: fixed;
   z-index: -2;
-  height: 240px;
+  height: 330px;
   /*This may to be adjusted depending on the content of your footer*/
   width: 100%;
   bottom: 0;
 }
 
 #contact {
-  background-color: #3e3838;
-  color: #fff;
-  padding: 5em 0;
+  background-color: #333;
+  color: #aaa;
+  padding: 7em 0;
 }
 
 #contact-content {
@@ -312,17 +316,38 @@ footer {
 }
 
 .footer-left * {
-  background-color: #888;
+  /* background-color: #888; */
   margin-bottom: 5px;
   font-size: 1.2em;
 }
 
+.footer-left h1 {
+  color: #fff;
+  font-size: 2em;
+}
+
+p.text {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.fas {
+  font-size: 15px;
+  width: 10px;
+}
+
+p i {
+  margin-right: 15px;
+}
+
+
+
 .footer-right a {
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .footer-right a img {
-  width: 40px;
+  width: 35px;
 }
 
 .footer-right a:first-child {
