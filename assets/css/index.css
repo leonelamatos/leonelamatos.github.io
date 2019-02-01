@@ -1,5 +1,13 @@
 /* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,800,700,900|Montserrat:900'); */
 
+@import url('./assets/css/fonts?family=BkModelicaS:200,700,900');
+
+
+
+
+
+
+/*
 @font-face {
   font-family: 'BkModelicaS';
   src: url('fonts/BwModelicaSS01-Black.woff') format('woff');
@@ -33,8 +41,7 @@
     src: url('fonts/BwModelica-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
-  }
-
+  } */
 
 *,
 :before,

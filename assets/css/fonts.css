@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'BkModelicaS';
+  src: url('./assets/fonts/BwModelicaSS01-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'BdModelicaS';
+    src: url('./assets/fonts/BwModelicaSS01-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ltModelicaS';
+    src: url('./assets/fonts/BwModelicaSS01-Light.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'rgModelicaS';
+    src: url('./assets/fonts/BwModelica-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ModelicaS Black';
+    src: url('./assets/fonts/BwModelica-Black.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
