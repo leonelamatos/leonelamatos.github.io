@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,800,700,900|Montserrat:900');
+/* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,800,700,900|Montserrat:900'); */
+@font-face {
+  font-family: BkModelicaS;
+  src: url('assets\fonts\BwModelicaSS01-Black.otf') format(otf);
+  font-weight: 900;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: BdModelicaS;
+    src: url('assets\fonts\BwModelicaSS01-Bold.otf') format(otf);
+    font-weight: 700;
+    font-style: normal;
+    }
+
 
 *,
 :before,
@@ -71,7 +85,7 @@ h1#bgLetter {
 }
 
 #div2 h2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'BkModelicaS', sans-serif;
   letter-spacing: -13px;
   text-align: center;
   font-size: 8em;
@@ -259,8 +273,8 @@ h2 span {
   color: #fff;
 }
 
-/* 
-=================================== 
+/*
+===================================
 */
 
 #about {
