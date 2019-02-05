@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,800,700,900|Montserrat:900');
+/* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,800,700,900|Montserrat:900'); */
 
 /* @import url('fonts.css'); */
 
@@ -60,18 +60,28 @@ main {
   margin-bottom: 330px;
 }
 
-header {
+
+.sticky {
   position: fixed;
+  top: 38px;
+  width: 100%;
+}
+
+header {
+  /* position: fixed;
   top: 0;
-  right: 0;
-  min-width: 1000px;
+  right: 0; */
+  width: 100%;
   z-index: 1;
+  margin-top: -38px;
+  background: #729d39;
 }
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0 150px;
+  min-width: 750px;
 }
 
 nav ul {
@@ -79,29 +89,54 @@ nav ul {
   display: flex;
 }
 
-/*
-nav ul a li {
-  padding: 40px 100px;
-}
-*/
+
+
+
 nav ul a {
   color: #fff;
   text-decoration: none;
-  padding: 40px 50px;
+  padding: 10px 50px;
+}
+
+nav ul a:first-child {
+  /* background: #fff; */
+  padding-left: 0;
+}
+
+nav ul a:last-child {
+  /* background: #fff; */
+  padding-right: 0;
 }
 
 
 #welcome-section {
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
   background-color: #ddd;
 }
 
 #parent {
+  width: 1920px;
+  height: 100vh;
   margin: 0 auto;
   position: relative;
-  width: 750px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+
+#div2 {
+  /* display: block; */
+  /* height: 100%; */
+  /* position: absolute; */
+  /* top: 475px; */
+  left: 0;
+  margin: auto;
+
+}
+
+
+
 
 h1#bgLetter {
   font-size: 244em;
@@ -109,19 +144,20 @@ h1#bgLetter {
 }
 
 #div2 h2 {
-  font-family: 'rgModelicaS';
+  /* font-family: 'rgModelicaS'; */
   letter-spacing: -13px;
   text-align: center;
   font-size: 8em;
   font-weight: 700;
-  color: #000;
+  color: #36622b;
+  transform: translateY(0px)
 }
 
 h2 span {
   letter-spacing: -10px;
   color: #fff;
   font-weight: 900;
-  font-family: 'ModelicaS Black';
+  /* font-family: 'ModelicaS Black'; */
   position: relative;
   left: -2px;
   z-index: 0;
@@ -147,13 +183,54 @@ h2 span {
   z-index: 0;
 }
 
-#div2 {
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 475px;
-  left: 0;
-  margin: auto;
+
+
+@media (min-width: 360px) and (max-width: 414px) {
+
+  #welcome-section {
+    height: 90vh;
+    overflow: hidden;
+    background-color: #ddd;
+  }
+
+  #div2 {
+    left: 129px;
+  }
+
+  #div2 h2 {
+    font-size: 3em;
+    letter-spacing: -5px;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+  }
+
+  h1#bgLetter {
+    font-size: 70em;
+    font-weight: 900;
+  }
+
+  #div1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -550px;
+    right: -160px;
+    margin: 0 auto;
+    z-index: 0;
+  }
+
+  #div2 h3 {
+    width: 100%;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    margin-top: -0.3em;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+  }
+
+
 }
 
 /* ======================= */
@@ -309,15 +386,20 @@ h2 span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 7em 0;
+  padding: 5em 0;
   /*   background-color: #fff; */
 }
 
 #about h1 {
+  font-size: 2em;
   color: #888;
   width: 200px;
-  /*   padding:; */
-  border-left: 6px solid #f05a28;
+  height: 170px;
+  border-right: 6px solid #f05a28;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #about span {
@@ -372,7 +454,6 @@ p.text {
 
 .footer-left p a#profile-link {
   text-decoration: none;
-
 }
 
 .fab,
@@ -386,7 +467,9 @@ p i {
 }
 
 .footer-right a {
+  opacity: .5;
   margin-left: 35px;
+  transition: opacity .4s ease-in-out;
 }
 
 .footer-right a img {
@@ -397,11 +480,11 @@ p i {
   margin-left: 0px;
 }
 
-@media (min-width: 700px) {
-  #project {
-    color: #fff;
-  }
+.footer-right a:hover {
+  opacity: 1;
 }
+
+
 
 .container {
   /*   display:flex; */
