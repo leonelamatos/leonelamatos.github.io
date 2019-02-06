@@ -12,7 +12,10 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     var imgPos = scrollTop / 5 + 'px';
-    $('#div2').css('transform', 'translateY(-' + imgPos + ')');
+    $('#squared_logo').css('transform', 'translateY(-' + imgPos + ')');
+
+    var bgImgPos = scrollTop / 2 + 'px';
+    $('#welcome-section').css('transform', 'translateY(-' + bgImgPos + ')');
   });
 
   window.onscroll = function() {
